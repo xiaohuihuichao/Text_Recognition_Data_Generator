@@ -31,7 +31,8 @@
 ### 水平拉伸
 ![](imgs/distortion.jpg)
 
-以上效果可以叠加使用，也可以随机添加，各种效果随机出现的概率可以在[generate.py](generate.py)的第24行修改
+以上效果可以叠加使用，也可以随机添加，各种效果随机出现的概率可以在[generate.py](generate.py)的第24行修改。
+图片若在github上显示不出来，可以在imgs文件夹里面查看。
 
 ---
 ## 使用方法

@@ -21,15 +21,15 @@ class write:
 
     def write(self, text, text_RGB=(0, 0, 0), bg_RGB=(255, 255, 255)):
         # 图像增强
-        line_rate_1 = 0.2
-        line_rate_2 = 0.2
-        ellipse_rate = 0.2
-        gaussian_rate = 0.2
-        noise_rate = 0.2
-        bright_point_rate = 0.2
-        skew_rate = 0.2
-        sin_distortion_rate = 0.2
-        distortion_w_rate= 0.2
+        line_rate_1 = 0
+        line_rate_2 = 0
+        ellipse_rate = 0
+        gaussian_rate = 0.
+        noise_rate = 0.
+        bright_point_rate = 0.
+        skew_rate = 0.
+        sin_distortion_rate = 0.
+        distortion_w_rate= 0
 
         font = np.random.choice((self.fonts))
         text_width, text_height = font.getsize(text)

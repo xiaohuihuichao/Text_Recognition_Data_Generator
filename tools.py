@@ -100,7 +100,7 @@ def line_skew(img, borderValue, min_h_rate=0.5, w_offset=10):
     return perspective(img, points_from, points_to, (w, h), borderValue)[row_min:row_max]
 
 
-def distortion_w(img, back_value, num_split_max=4, offset_max=0.1):
+def distortion_w(img, back_value, num_split_max=3, offset_max=0.2):
     h, w = img.shape[0:2]
     num_split = np.random.randint(2, num_split_max)
     middle_w = [np.random.uniform(-offset_max, offset_max)*w+w/num_split for i in range(num_split)]
@@ -121,7 +121,7 @@ def distortion_w(img, back_value, num_split_max=4, offset_max=0.1):
     return img
 
 
-def sin_distortion_h(img, back_value, num_peak_max=2, p_max=8):
+def sin_distortion_h(img, back_value, num_peak_max=4, p_max=10):
     h, w = img.shape[0:2]
     
     num_peak = np.random.uniform(1, num_peak_max)
